@@ -80,3 +80,27 @@ nav a {
 .skip-link:focus {
   top: 0;
 }
+
+/* Trạng thái biến đổi khi body có class dark-theme */
+body.dark-theme {
+  --bg-primary: #0f172a;
+  --text-primary: #f8fafc;
+  --accent-color: #38bdf8;
+}
+
+/* Style cho nút bấm */
+#theme-btn {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#theme-btn:focus-visible {
+  outline: 3px solid var(--accent-color);
+  outline-offset: 3px;
+}

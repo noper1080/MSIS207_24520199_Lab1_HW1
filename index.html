@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; script-src 'self';">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <header role="banner">
         <h1>Thanh Binh Nguyen - Developer Portfolio</h1> <!-- Chỉ duy nhất MỘT thẻ h1 trong tài liệu[cite: 1] -->
+        <!-- Nút chuyển theme: KHÔNG dùng onclick, có thuộc tính aria-pressed để hỗ trợ đọc màn hình -->
+        <button id="theme-btn" aria-label="Toggle Dark Mode" aria-pressed="false">Toggle Theme</button>
     </header>
 
     <nav role="navigation" aria-label="Primary">
@@ -59,5 +63,6 @@
   <footer role="contentinfo">
         <p>&copy; 2026 Thanh Binh Nguyen. All rights reserved.</p> <!-- Dùng HTML Entity cho ký tự bản quyền[cite: 1] -->
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
