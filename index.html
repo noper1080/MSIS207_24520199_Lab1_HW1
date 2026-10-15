@@ -26,7 +26,21 @@
 
   <main id="main-content" role="main"> <!-- id khớp với href của skip-link -->
         <section id="about">
-            <h2>About Me</h2> <!-- Đảm bảo cấu trúc heading tuần tự: h1 -> h2 -> h3[cite: 1] -->
+            <h2>About Me</h2> 
+            <picture>
+            <!-- Trình duyệt sẽ ưu tiên load file webp nếu có hỗ trợ -->
+            <source type="image/webp" srcset="avatar.webp">
+            <!-- Dự phòng bằng file jpg thông thường -->
+            <img 
+            src="avatar.jpg" 
+            alt="Chân dung của Thanh Binh Nguyen" 
+            width="150" 
+            height="150" 
+            loading="lazy" 
+            decoding="async"
+            style="border-radius: 50%; margin-bottom: 1rem;"
+            >
+            </picture>
             <p>I am an engineering student focusing on Modern Web Development.</p>
         </section>
 
