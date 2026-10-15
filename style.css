@@ -1,0 +1,23 @@
+/* style.css */
+:root {
+  /* Khai báo Design Tokens[cite: 1] */
+  --bg-primary: #ffffff;
+  --text-primary: #0f172a; /* Màu xanh đen trên nền trắng đảm bảo tương phản cao */
+  --accent-color: #0284c7; 
+}
+
+/* Ẩn skip-link đi, chỉ hiện ra khi người dùng dùng phím Tab (focus) */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--text-primary);
+  color: var(--bg-primary);
+  padding: 8px;
+  z-index: 100;
+  transition: top 0.3s;
+}
+
+.skip-link:focus {
+  top: 0;
+}

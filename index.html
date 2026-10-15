@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <header role="banner">
+        <h1>Thanh Binh Nguyen - Developer Portfolio</h1> <!-- Chỉ duy nhất MỘT thẻ h1 trong tài liệu[cite: 1] -->
+    </header>
+
+    <nav role="navigation" aria-label="Primary">
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+  <main id="main-content" role="main"> <!-- id khớp với href của skip-link -->
+        <section id="about">
+            <h2>About Me</h2> <!-- Đảm bảo cấu trúc heading tuần tự: h1 -> h2 -> h3[cite: 1] -->
+            <p>I am an engineering student focusing on Modern Web Development.</p>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <!-- Các Project Card sẽ đặt ở đây -->
+        </section>
+  </main>
+
+  <footer role="contentinfo">
+        <p>&copy; 2026 Thanh Binh Nguyen. All rights reserved.</p> <!-- Dùng HTML Entity cho ký tự bản quyền[cite: 1] -->
+  </footer>
+</body>
+</html>
